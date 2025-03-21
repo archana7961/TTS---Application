@@ -1,0 +1,57 @@
+# News Summarization & Hindi TTS Application  
+
+## Overview  
+This application extracts news articles about a given company, performs sentiment analysis, and generates a Hindi audio summary using Text-to-Speech (TTS).  
+
+### Features  
+✅ **News Extraction** – Fetches real-time news articles related to a company.  
+✅ **Sentiment Analysis** – Classifies news as Positive, Negative, or Neutral.  
+✅ **Comparative Analysis** – Compares sentiment trends across articles.  
+✅ **Hindi Text-to-Speech** – Converts sentiment summary into Hindi audio.  
+✅ **Interactive Web UI** – Built using **Streamlit** for easy access.  
+
+---
+
+## Installation  
+
+### **1️Clone the Repository**  
+```bash
+git clone https://github.com/your-username/news-summarization-tts.git
+cd news-summarization-tts
+
+
+#Install Dependencies
+pip install -r requirements.txt
+
+
+#Run the Application
+streamlit run app.py
+
+
+#Usage  
+1️ Enter a company name (e.g., "Tesla") in the search bar.
+2️ Click Fetch News to extract articles.
+3️ View sentiment analysis results for each news article.
+4️ Listen to the Hindi audio summary generated from the sentiment analysis.
+
+##Project Structure
+ news-summarization-tts
+│── app.py                # Streamlit web app
+│── fetch_news.py         # News extraction (BeautifulSoup, Newspaper3k)
+│── sentiment_analysis.py # Sentiment analysis (TextBlob, NLTK)
+│── tts_hindi.py          # Text-to-Speech (gTTS)
+│── requirements.txt      # Project dependencies
+│── README.md             # Project documentation
+
+
+#Deployment
+
+This app can be deployed on Hugging Face Spaces or any cloud platform.
+
+Deploy on Hugging Face:
+1️ Create a new Hugging Face Space
+2️ Select Streamlit as the framework
+3️ Push the code to Hugging Face
+
+Once deployed, access the app at:
+📌 https://your-username-news-summarization-tts.hf.space
